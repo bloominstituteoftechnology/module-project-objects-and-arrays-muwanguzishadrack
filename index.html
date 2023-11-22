@@ -97,14 +97,20 @@
 
       // 👉 CHALLENGE 6
       // 🧠 The function pushElement takes an array as the first argument, and any value we wish as the second.
+
       // 🧠 The function adds the given value as the last element of the array, and then returns the whole array.
+
       // 🧠 Examples of usage:
       // pushElement([], 1) // should return [1]
       // pushElement(['a', 'b'], 'c') // should return ['a', 'b', 'c']
-      function pushElement() {}
+      function pushElement(ele1, ele2) {
+        ele1[ele1.length] = ele2;
+        return ele1;
+      }
 
       // 👉 CHALLENGE 7
       // 🧠 The function stripX takes a string as its argument.
+
       // 🧠 The function strips any occurrences of the letter "x" from the string and returns the resulting string.
       // 🧠 Examples of usage:
       // stripX("xenomorph") // should return "enomorph"
@@ -115,7 +121,7 @@
       // 🧠 At each iteration of the loop, if the current character is not "x", then add it to the end of the result array.
       // 🧠 You can merge the result array back into a string by using join. Example: ["f", "o", "o"].join("") yields "foo"
       // 🧠 Do not forget to return your rejoined string!
-      function stripX() {}
+      function stripX(char) {}
 
       // 👉 CHALLENGE 8
       // 🧠 The function stripChar takes a string as its first argument and a character as its second argument.
