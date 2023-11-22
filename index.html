@@ -68,11 +68,18 @@
 
       // 👉 CHALLENGE 4
       // 🧠 The function evenList takes an array as its argument and returns true if the array has an even number of elements, false otherwise.
+
       // 🧠 Note that the argument of the function is missing, you must write it.
       // 🧠 Examples of usage:
       // evenList(['a']) // should return false
       // evenList(['a', 'b']) // should return true
-      function evenList(arr) {}
+      function evenList(arr) {
+        if (arr.length % 2 !== 0) {
+          return false;
+        } else {
+          return true;
+        }
+      }
 
       // 👉 CHALLENGE 5
       // 🧠 The function firstOrLast takes an array as the first argument, and a Boolean as the second.
