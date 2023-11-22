@@ -87,7 +87,13 @@
       // 🧠 Examples of usage:
       // firstOrLast(['a', 'b'], true) // should return 'a'
       // firstOrLast(['a', 'b'], false) // should return 'b'
-      function firstOrLast() {}
+      function firstOrLast(arr1, arr2) {
+        if (!arr2) {
+          return arr1[arr1.length - 1];
+        } else {
+          return arr1[0];
+        }
+      }
 
       // 👉 CHALLENGE 6
       // 🧠 The function pushElement takes an array as the first argument, and any value we wish as the second.
