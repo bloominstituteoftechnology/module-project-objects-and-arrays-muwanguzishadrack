@@ -97,9 +97,7 @@
 
       // 👉 CHALLENGE 6
       // 🧠 The function pushElement takes an array as the first argument, and any value we wish as the second.
-
       // 🧠 The function adds the given value as the last element of the array, and then returns the whole array.
-
       // 🧠 Examples of usage:
       // pushElement([], 1) // should return [1]
       // pushElement(['a', 'b'], 'c') // should return ['a', 'b', 'c']
@@ -112,16 +110,32 @@
       // 🧠 The function stripX takes a string as its argument.
 
       // 🧠 The function strips any occurrences of the letter "x" from the string and returns the resulting string.
+
       // 🧠 Examples of usage:
       // stripX("xenomorph") // should return "enomorph"
       // stripX("paradox") // should return "parado"
+
       // ❗ Important Hints:
       // 🧠 Inside the function, we should split the given string into an array of characters. Example: "foo".split("") yields ["f", "o", "o"]
+
       // 🧠 Do not attempt to manipulate the array of characters. Create an empty result array, and populate it by looping over the characters.
+
       // 🧠 At each iteration of the loop, if the current character is not "x", then add it to the end of the result array.
+
       // 🧠 You can merge the result array back into a string by using join. Example: ["f", "o", "o"].join("") yields "foo"
       // 🧠 Do not forget to return your rejoined string!
-      function stripX(char) {}
+      function stripX(str) {
+        let chars = str.split("");
+        let result = [];
+
+        for (let i in chars) {
+          if (chars[i] !== "x") {
+            result.push(chars[i]);
+          }
+        }
+
+        return result.join("");
+      }
 
       // 👉 CHALLENGE 8
       // 🧠 The function stripChar takes a string as its first argument and a character as its second argument.
@@ -132,7 +146,17 @@
       // ❗ Important Notes:
       // 🧠 Try to solve this problem without looking at how you solved the previous one.
       // 🧠 If you need to look, do not copy & paste code. Take a peek and then work from memory!
-      function stripChar() {}
+      function stripChar(str1, char) {
+        let result = "";
+
+        for (let i in str1) {
+          if (str1[i] !== char) {
+            result += str1[i];
+          }
+        }
+
+        return result;
+      }
 
       // 👉 CHALLENGE 9
       // 🧠 The function getProps takes an object as its argument.
@@ -143,7 +167,17 @@
       // getProps({ lastName: "Smith", age: 35 }) // should return ["lastName"]
       // getProps({ firstName: "Jane", married: false }) // should return ["firstName"]
       // getProps({ name: "Bamby", favFood: "flowers" }) // should return ["name", "favFood"]
-      function getProps() {}
+      function getProps(obj2) {
+        let result = [];
+
+        for (let prop in obj2) {
+          if (prop !== "age" && prop !== "married") {
+            result.push(prop);
+          }
+        }
+
+        return result;
+      }
 
       // 🧪 TESTS, do not work below this line
       // 🧪 TESTS, do not work below this line
