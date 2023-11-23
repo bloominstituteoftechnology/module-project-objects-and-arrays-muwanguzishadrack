@@ -173,7 +173,7 @@
 
         for (let prop in obj2) {
           if (prop !== "age" && prop !== "married") {
-            result.push(prop);
+            result[result.length] = prop;
           }
         }
 
