@@ -130,7 +130,8 @@
 
         for (let i in chars) {
           if (chars[i] !== "x") {
-            result.push(chars[i]);
+            // result.push(chars[i]);
+            result[result.length] = chars[i];
           }
         }
 
